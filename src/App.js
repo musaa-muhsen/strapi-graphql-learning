@@ -22,9 +22,9 @@ const client = new ApolloClient({
 function App() {
   return (
   <Router >
-    <ApolloProvider>
+    <ApolloProvider client={client}>
     <div className="App">
-<SiteHeader />
+     <SiteHeader />
       <Switch>
          <Route exact path="/">
              <Homepage />
